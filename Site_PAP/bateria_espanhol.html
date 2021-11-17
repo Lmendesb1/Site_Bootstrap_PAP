@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ardrumino - Bateria</title>
+  <link rel="shortcut icon" href="img/arduino_red.jpg">
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  
+  <!--Sons-->
+  <script>
+	var bleep1 = new Audio();
+	bleep1.src = "caixa.wav";
+  </script>
+   <script>
+	var bleep2 = new Audio();
+	bleep2.src = "bumbo.wav";
+  </script>
+  <script>
+	var bleep3 = new Audio();
+	bleep3.src = "tom1.wav";
+  </script>
+  <script>
+	var bleep4 = new Audio();
+	bleep4.src = "tom2.wav";
+  </script>
+  <script>
+	var bleep5 = new Audio();
+	bleep5.src = "crash2.wav";
+  </script>
+  <script>
+	var bleep6 = new Audio();
+	bleep6.src = "hithat.wav";
+  </script>
+  <script>
+	var bleep7 = new Audio();
+	bleep7.src = "open.wav";
+  </script>
+  <div class="container" id="nav-container">
+      <!-- add essa class -->
+	  
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/hdcagency_logo.jpg" alt="hDC Agency"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+		
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="voltar-home" href="espanhol.html">Vuelve</span></a>
+          </div>
+        </div>
+		
+      </nav>
+    </div>
+  </head>
+<body>
+   <div id="bateria-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">ARDRUMINO</h3>
+              </div>
+			  
+				<img src="img/bateria_template.png" class="img-bateria" alt="Bateria Tempalte" id="img-bateria">
+			
+			  <button class="btn-caixa" id="btn-caixa"  onmousedown="bleep1.play()" >-----------</button>
+			  <button class="btn-bumbo" id="btn-bumbo" onmousedown="bleep2.play()" >-----------</button>
+			  <button class="btn-tom1" id="btn-tom1" onmousedown="bleep3.play()" >-----------</button>
+			  <button class="btn-tom2" id="btn-tom2" onmousedown="bleep4.play()" >-----------</button>
+			  <button class="btn-crash" id="btn-crash" onmousedown="bleep5.play()" >-----------</button>
+			  <button class="btn-hithat" id="btn-hithat" onmousedown="bleep6.play()" >-----------</button>
+			  <button class="btn-hithat-open" id="btn-hithat-open" onmousedown="bleep7.play()" >-----------</button>
+            </div>
+          </div>
+		<div id="legenda">
+			<h1>LEGENDA:</h1>
+			<h2>C = Trampa</h2>
+			<h2>B = Tambor de Bajo</h2>
+			<h2>N = Hola Sombrero Cerrado</h2>
+			<h2>M = Hola Sombrero Abierto</h2>
+			<h2>L = Sombrero de Choque</h2>
+			<h2>J = Tom 1</h2>
+			<h2>K = Tom 2</h2>
+		</div>
+		<div id="call-area2">
+        <div class="container2">
+            <div class="row2">
+              <a class="navbar-brand" href="index.html">
+				<img id="logo" src="img/hdcagency_logo.jpg" alt="hDC Agency"> 
+				</a> 
+            </div>
+          </div>
+      </div>
+      </div>
+	  
+	<script src="js/scripts2.js"></script>  
+</body>
+
+</html>
+
